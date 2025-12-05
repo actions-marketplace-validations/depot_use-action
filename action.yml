@@ -5,7 +5,7 @@ branding:
   icon: package
   color: gray-dark
 runs:
-  using: node16
+  using: node20
   main: dist/index.js
 inputs:
   version:
@@ -23,9 +23,4 @@ inputs:
     description: |-
       If set, will populate the `DEPOT_TOKEN` environment variable.
     default: ''
-    required: false
-  shim-buildx:
-    description: |-
-      If set, will install the `buildx build` shim.
-    default: 'true'
     required: false
